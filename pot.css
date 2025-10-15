@@ -531,17 +531,27 @@ max-width: 1000px;
     padding-right: 20%;
   }
 
-.contact-social .social-icons a {
-  display: inline-block;
-  font-size: 2rem;
-  margin-right: 1rem;
-  transition: transform 0.3s;
-  padding: 1.5rem;
+
+.connect{
+  margin-bottom:3rem ;
+  
+}
+/*connect social links*/
+.social-links {
+  margin-top: 20px;
 }
 
-.contact-social .social-icons a:hover {
-  transform: scale(1.2);
+.social-links a {
+  margin: 0 10px;
+  color: #00d1ff;  ; 
+  text-decoration: none;
 }
+
+.social-links a:hover {
+  color: blue;
+}
+
+
 
 @media (max-width: 768px) {
   .contact-container {
@@ -558,57 +568,7 @@ max-width: 1000px;
     font-size: 0.9rem;
   }
 
-  .contact-social .social-icons a img{
-    /*font-size: 1.5rem;*/
-    margin-right: 0.5rem;
-  }
-}
 
-.contact-social .social-icons a img span{
-  text-decoration: none;
-  color: #00d1ff;
-  text-align: center;
-  font-size: 0.1rem;
-
-}
-
-
-
-
-/*footer*/
-.footer {
-  background-color: gray;
-  color: #fff;
-  padding: 1.5rem 2rem;
-  text-align: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.footer-socials a img{
-  color: #fff;
-  /*font-size: 1.5rem;*/
-  margin-left: 1rem;
-  transition: transform 0.3s ease, color 0.3s;
-}
-
-.footer-socials a img:hover {
-  color: #00acee;
-  transform: scale(1.2);
-}
 
 @media (max-width: 600px) {
   .footer-container {
@@ -616,34 +576,11 @@ flex-direction: column;
     gap: 1rem;
   }
 
-  .footer-socials a img{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
+  
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
 
-.footer-socials a img{
-  color: #fff;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  display: inline-block;
-  transition: color 0.3s ease;
-  animation: float 3s ease-in-out infinite;
-}
 
-.footer-socials a:hover img{
-  color: #00acee;
-  animation: bounce 0.6s;
-}
 
 
 

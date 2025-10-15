@@ -1,222 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="pot.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pot.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-   
-<!------header-->
-  
-<header class="header">
+
+  <!------header-->
+
+  <header class="header">
 
     <nav>
-          <h3>Tri<span>nity</span></h3>
-       <ul>
-         <li><a href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#skills">Skills</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#contact">Contact</a></li>
-         <!--darkmode-->
-         
-          <li><button onclick="toggleMode()">🌙</button></li>
-         
-         
-       </ul>
+      <h3>Tri<span>nity</span></h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--darkmode-->
+
+        <li><button onclick="toggleMode()">🌙</button></li>
+
+
+      </ul>
     </nav>
-    
+
   </header>
-  
+
   <!-----home section--->
   <section class="home" id="home">
-  <div class="home-left">
-    <h1>Hi, I'm Trini</h1>
-<p class="typing-text"></p>
-    <a href="#contact" class="connect-btn">Let's Connect</a>
-  </div>
+    <div class="home-left">
+      <h1>Hi, I'm Trini</h1>
+      <p class="typing-text"></p>
+      <a href="#contact" class="connect-btn">Let's Connect</a>
+    </div>
 
-  <div class="home-right">
-    <img src="image1.jpg" alt="My Photo" />
-  </div>
-</section>
-  
-  
+    <div class="home-right">
+      <img src="image1.jpg" alt="My Photo" />
+    </div>
+  </section>
+
+
   <!-----about---->
   <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="image2.jpg" alt="My Photo">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="image2.jpg" alt="My Photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I’m <strong>Your Name</strong>, a passionate and creative frontend web developer with a strong love for
+          clean code, elegant designs, and problem-solving. I enjoy transforming ideas into real, responsive websites
+          that look great on any device.
+        </p>
+        <p>
+          My journey began with curiosity and a desire to build something meaningful. Since then, I’ve learned HTML,
+          CSS, JavaScript, and design tools like Figma. I love building user-friendly interfaces and continuously
+          expanding my skills.
+        </p>
+
+      </div>
     </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hello! I’m <strong>Your Name</strong>, a passionate and creative frontend web developer with a strong love for clean code, elegant designs, and problem-solving. I enjoy transforming ideas into real, responsive websites that look great on any device.
-      </p>
-      <p>
-        My journey began with curiosity and a desire to build something meaningful. Since then, I’ve learned HTML, CSS, JavaScript, and design tools like Figma. I love building user-friendly interfaces and continuously expanding my skills.
-      </p>
-      
+  </section>
+
+  <!-------skills--->
+
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skill-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="languages">Languages</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
     </div>
-  </div>
-</section>
 
-<!-------skills--->
 
- <section id="skills" class="skills-section">
-  <h2>My Skills</h2>
 
-  <div class="skill-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="languages">Languages</button>
-    <button class="filter-btn" data-filter="tools">Tools</button>
-  </div>
-  
-
-  
     <!-- Tools (Left on large screens) -->
-      <div class="skill-group tools">
-    <div class="tools-used">
-      <h3>Tools I Use</h3>
-      <ul>
-        <li>VS Code</li>
-        <li>Git & GitHub</li>
-        <li>Chrome DevTools</li>
-        <li>Netlify</li>
-        <li>Canva</li>
-      </ul>
-    </div>
+    <div class="skill-group tools">
+      <div class="tools-used">
+        <h3>Tools I Use</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>Git & GitHub</li>
+          <li>Chrome DevTools</li>
+          <li>Netlify</li>
+          <li>Canva</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Skills (Right on large screens) -->
     <div class="skill-group languages">
-    <div class="skills-content">
-    <div class="skills-bars">
-      <div class="skill">
-        <div class="skill-title">HTML <span>95%</span></div>
-        <div class="skill-bar"><div class="skill-fill html"></div></div>
-      </div>
+      <div class="skills-content">
+        <div class="skills-bars">
+          <div class="skill">
+            <div class="skill-title">HTML <span>95%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill html"></div>
+            </div>
+          </div>
 
-      <div class="skill">
-        <div class="skill-title">CSS <span>90%</span></div>
-        <div class="skill-bar"><div class="skill-fill css"></div></div>
-      </div>
+          <div class="skill">
+            <div class="skill-title">CSS <span>90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill css"></div>
+            </div>
+          </div>
 
-      <div class="skill">
-        <div class="skill-title">JavaScript <span>85%</span></div>
-<div class="skill-bar"><div class="skill-fill js"></div></div>
-      </div>
+          <div class="skill">
+            <div class="skill-title">JavaScript <span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill js"></div>
+            </div>
+          </div>
 
-      <div class="skill">
-        <div class="skill-title">Figma <span>80%</span></div>
-        <div class="skill-bar"><div class="skill-fill figma"></div></div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</section>  
-
-
-<!-----projects section------->
-<section class="projects" id="projects">
-  <h2>My Projects</h2>
-
-  <div class="projects-container">
-    <!-- Each .project contains image + overlay link -->
-    <div class="project"><a href="https://portfoliopagetrin.netlify.app/"><img src="project 7.jpg"><span>View Project</span></a></div>
-    <div class="project"><a href="https://simplecalculatortrin.netlify.app/"><img src="Project2.jpg"><span>View Project</span></a></div>
-    <div class="project"><a href="https://personalportfoliotrin.netlify.app/"><img src="project 9.jpg"><span>View Project</span></a></div>
-    <div class="project"><a href="https://example.com"><img src="Project 5.jpg"><span>View Project</span></a></div>
-    <div class="project"><a href="https://idtrin.netlify.app/"><img src="project 11.jpg"><span>View Project</span></a></div>
-    <div class="project"><a href="https://login-form-trin.netlify.app/"><img src="project 10.jpg"><span>View Project</span></a></div>
-    <div class="project hidden"><a href="https://salesoffers.netlify.app/"><img src="Project1.jpg"><span>View Project</span></a></div>
-<div class="project hidden"><a href="https://todolisttrin.netlify.app/"><img src="project8.jpg"><span>View Project</span></a></div>
-    <div class="project hidden"><a href="https://lewagon.netlify.app/"><img src="project 12.jpg"><span>View Project</span></a></div>
-    <div class="project hidden"><a href="https://portfoliotrin.netlify.app/"><img src="project 6.jpg"><span>View Project</span></a></div>
-    <div class="project hidden"><a href="https://imageslidertrin.netlify.app/"><img src="Project 4.jpg"><span>View Project</span></a></div>
-    <div class="project hidden"><a href="https://flowerstrin.netlify.app/"><img src="Project 3.jpg"><span>View Project</span></a></div>
-    </div>
-
-  <div class="toggle-arrow" id="toggleArrow">➤ Show More</div>
-</section>
-
-<!------contact section-->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <!-- Contact Form -->
-    <div class="contact-form">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST" id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        
-         <!-- Hidden fields to control form behavior -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="box">
-  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-
-        <button type="submit">Send</button>
-        <p id="successMessage" style="color: green; display: none;">Message sent successfully!</p>
-      </form>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="contact-social">
-      <h3>Connect With Me</h3>
-      <div class="social-icons">
-        <a href="" alt="GitHub"target="_blank"><img src="GitHubicon.png" alt="" width="15%"><span>GitHub</span></a>
-        <a href="trinitynkasiima@gmail.com" target="_blank"><img src="email.png" alt="" width="17%"><span>Email</span></a>
-        <a href="https://www.linkedin.com/posts/trinity-nkasiima-b47070374_codequeen-codingjourney-womenintech-activity-7349414353500033024-3aTS?utm_source=share&utm_medium=member_android&rcm=ACoAAFyOvWcBy1hsIgmzqHX-M-YGeEwsgrC-kXI
-
-" target="_blank"><img src="linkedin.png" alt="" width="23%"><span>linkedin</span></a>
-        <a href="#" target="_blank"><img src="facebook2.png" alt="" width="15%"><span>facebook</span></a>
+          <div class="skill">
+            <div class="skill-title">Figma <span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill figma"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
+  <!-----projects section------->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+      <!-- Each .project contains image + overlay link -->
+      <div class="project"><a href="https://portfoliopagetrin.netlify.app/"><img src="project 7.jpg"><span>View
+            Project</span></a></div>
+      <div class="project"><a href="https://simplecalculatortrin.netlify.app/"><img src="Project2.jpg"><span>View
+            Project</span></a></div>
+      <div class="project"><a href="https://personalportfoliotrin.netlify.app/"><img src="project 9.jpg"><span>View
+            Project</span></a></div>
+      <div class="project"><a href="https://example.com"><img src="Project 5.jpg"><span>View Project</span></a></div>
+      <div class="project"><a href="https://idtrin.netlify.app/"><img src="project 11.jpg"><span>View Project</span></a>
+      </div>
+      <div class="project"><a href="https://login-form-trin.netlify.app/"><img src="project 10.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://salesoffers.netlify.app/"><img src="Project1.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://todolisttrin.netlify.app/"><img src="project8.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://lewagon.netlify.app/"><img src="project 12.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://portfoliotrin.netlify.app/"><img src="project 6.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://imageslidertrin.netlify.app/"><img src="Project 4.jpg"><span>View
+            Project</span></a></div>
+      <div class="project hidden"><a href="https://flowerstrin.netlify.app/"><img src="Project 3.jpg"><span>View
+            Project</span></a></div>
+    </div>
+
+    <div class="toggle-arrow" id="toggleArrow">➤ Show More</div>
+  </section>
+
+  <!------contact section-->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST" id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+
+          <!-- Hidden fields to control form behavior -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+          <button type="submit">Send</button>
+          <p id="successMessage" style="color: green; display: none;">Message sent successfully!</p>
+        </form>
+      </div>
+
+      <!-- animated Social Icons -->
+      
+          <div class="social-links">
+            <h3 class="connect">Connect with me.</h3>
+  <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+  <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+  <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+  <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!----footer-->
 <footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2025 Trinity Nkasiima. All rights reserved.</p>
 
-    <div class="footer-socials">
-      <a href="https://github.com/yourprofile" target="_blank"><img src="GitHubicon.png" alt="" width="3.3%"></a>
-      <a href="https://www.linkedin.com/posts/trinity-nkasiima-b47070374_codequeen-codingjourney-womenintech-activity-7349414353500033024-3aTS?utm_source=share&utm_medium=member_android&rcm=ACoAAFyOvWcBy1hsIgmzqHX-M-YGeEwsgrC-kXI
+  <p>&copy; 2025 Trinity Nkasiima. All rights reserved.</p>
 
-" target="_blank"><img src="linkedin.png" alt="" width="3%"></a>
-      <a href="mailto:trinitynkasiima@gmail.com"><img src="email.png" alt="" width="3.5%"></a>
-      <a href="https://twitter.com/yourprofile" target="_blank"><img src="facebook2.png" alt="" width="3%"> </a>
-    </div>
-  </div>
 </footer>
+  
 
-
-
-
-
--
 
 
 
   
-<!---contact-->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  
 
 
-    
 
-  <script src="pot.js"></script>  
+
+  <!---contact-->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+
+
+
+  <script src="pot.js"></script>
 </body>
+
 </html>
